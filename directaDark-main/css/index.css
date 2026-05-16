@@ -1,0 +1,144 @@
+/* css/index.css */
+header{
+    /* background-color: blue; */
+    color: #f4f4f4;
+    height: 50px;
+    width: 100%;
+}
+
+#titulo{
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Titillium Web;
+    background-color: #f4f4f4;
+    padding: 0px;
+    margin: 0;
+    background-image: url(../images/Bgd_PRG_baja.jpg);
+}
+
+.espacio{
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+}  
+
+#chartLight{
+    margin: 20 px;
+}
+
+
+.container {
+    display: grid;
+    /* La función repeat() es una forma abreviada de "repeat(count, track-size)."
+      creamos 2 columnas (count es 2), y cada una tiene un tamaño de 1fr (track-size es 1fr)
+      "1fr" (fracción)la columna debe ocupar una fracción igual del espacio disponible./*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Ajusta el espacio entre los contenedores según lo necesites */
+    padding: 15px;
+    margin: 0;
+}
+
+.seccion{
+    grid-column: span 2;
+    border:0.1px solid;
+    border-color: rgb(6, 248, 232, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(127, 255, 212, 0.5);
+}
+
+.seccion-container__title{
+    margin: 5px 0px;
+    padding: 0px 10px;
+    color:rgb(127, 255, 212)
+}
+
+.chart-container {
+/*     border:0.1px solid;
+    border-color: rgb(6, 248, 232, 0.5); */
+    background-color: rgba(80, 80, 80, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.chart-container__header{
+    width: 100%;
+    display: flex;
+}
+
+.chart-container__title{
+    margin: 2px;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    color: aquamarine;
+    border: 1px 2px 3px solid;
+    border-top: aquamarine;
+}
+
+.chart-container__select-container{
+    display:flex;
+    width: 90%;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.periodicidad-select__label, .comunicacion-select__label{
+    font-weight: light;
+    margin-right: 10px;
+    color: white;
+}
+
+.periodicidad-select__dropdown, .comunicacion-select__dropdown{
+    height: 70%;
+}
+
+.chart-container__description {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    color: rgb(169, 169, 170);
+    margin: 0px;
+}
+
+.chart-container__iframe {
+    width: 640px;
+    height: 270px;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+}
+
+
+/* Media query for mobile devices 952*/
+@media (max-width: 1344px) {
+/* 952 es cuando comienza el scroll en los graficos */
+
+    .container{
+        /* padding: 30px 0px;
+        margin: 0px; */
+        grid-template-columns: 1fr;
+    }
+
+    .seccion{
+        grid-column: span 1;
+    }
+
+    .chart-container{
+        margin: 0px;
+        grid-column: span 1;
+    }
+
+}

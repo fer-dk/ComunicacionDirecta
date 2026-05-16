@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directa Dark</title>
+    <link preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@3.4.0/dist/lightweight-charts.standalone.production.js"></script>
+
+</head>
+<body>
+    <div class="lightweight">
+        <div class="espacio"></div>
+        <div id="chartLight"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 id="titulo">Comunicación Directa</h1>
+        </header>
+
+        <div class="seccion">
+            <h2 class="seccion-container__title">Envíos válidos por mes</h2>
+        </div>
+
+        
+
+        <div class="chart-container" id="chart1">
+            <h3 class="chart-container__title">Por Canal</h3>
+            <iframe class="chart-container__iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs-EbAhYXIdRzTfTjPYEDJrSe5Jw3WvD17FMyZVopUbjDFBsc8cRiLZQDeFejoYg/pubchart?oid=1632282870&format=interactive"></iframe>
+            <p class="chart-container__description">Descripcion de Grafico Asignaciones</p>
+        </div>
+
+        <div class="chart-container" id="chart2">
+            <div class="chart-container__header">
+                <h3 class="chart-container__title">Por Comunicación</h3>
+                <div class="chart-container__select-container">
+                    <label for="comunicacion-select" class="comunicacion-select__label">Seleccione por tipo</label>
+                    <select name="comunicacion" id="comunicacion-select" class="comunicacion-select__dropdown">
+                        <option value="asignaciones">Asignaciones</option>
+                        <option value="previsional">Previsional</option>
+                        <option value="tramitesYservicios">Trámites y Servicios</option>
+                        <option value="programas">Programas</option>
+                        <option value="organismoExternos">Organismos Externos</option>
+                    </select>
+                </div>
+            </div>
+            <iframe class="chart-container__iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo0Ygg87eW3QuRh0dXy5Z3v_AmGJreCeXnvV_1fIa5SSAmbY44jlIzBWVVKv3NU26JHsPDQaL1LHXC/pubchart?oid=1411195835&format=interactive"></iframe>
+            <p class="chart-container__description">Descripcion de Grafico Asignaciones</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="seccion">
+            <h2 class="seccion-container__title"> Envíos válidos por Canal </h2>
+        </div>
+
+        <div class="chart-container" id="chart3">
+            <h3 class="chart-container__title">Total por Canal</h3>
+            <iframe class="chart-container__iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo0Ygg87eW3QuRh0dXy5Z3v_AmGJreCeXnvV_1fIa5SSAmbY44jlIzBWVVKv3NU26JHsPDQaL1LHXC/pubchart?oid=1845603040&format=interactive"></iframe>
+            <p class="chart-container__description">Descripcion de Grafico Asignaciones</p>
+        </div>
+
+        <div class="chart-container" id="chart4">
+            <div class="chart-container__header">
+                <h3 class="chart-container__title">Por Periodicidad</h2>
+                <div class="chart-container__select-container">
+                    <label for="periodicidad-select" class="periodicidad-select__label">Seleccione por tipo</label>
+                    <select name="periodicidad" id="periodicidad-select" class="periodicidad-select__dropdown">
+                        <option value="aDemanda">A demanda</option>
+                        <option value="diaria">Diaria</option>
+                        <option value="eventual">Eventual</option>
+                        <option value="mensual">Mensual</option>
+                    </select>
+                </div>
+            </div>
+            <iframe class="chart-container__iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo0Ygg87eW3QuRh0dXy5Z3v_AmGJreCeXnvV_1fIa5SSAmbY44jlIzBWVVKv3NU26JHsPDQaL1LHXC/pubchart?oid=744059156&format=interactive"></iframe>
+            <p class="chart-container__description">Descripcion de Grafico Canales</p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
